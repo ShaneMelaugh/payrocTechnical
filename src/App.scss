@@ -1,0 +1,67 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.cookbook {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+.ingredient {
+  background: rgb(229, 229, 229);
+  &__input {
+    // margin: 0.5rem;
+    // width: 50%;
+  }
+  &__card {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    button {
+      width: 120px;
+    }
+    &--inner {
+      display: flex;
+    }
+  }
+  &__img {
+    width: 130px;
+  }
+}
+
+.meal {
+  background: rgb(229, 229, 229);
+  &__input {
+    margin: 0.5rem;
+    width: 50%;
+  }
+  &__card {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    button {
+      width: 120px;
+      height: 40px;
+    }
+    &--inner {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  &__img {
+    width: 130px;
+    padding: 0 1rem 0 0;
+  }
+}
+
+.card-columns {
+  height: 100vh;
+  overflow-y: scroll;
+}
